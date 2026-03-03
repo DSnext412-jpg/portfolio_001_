@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Dipak's Portfolio{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <div class="hero-text">
+        <p class="subtitle">CREATIVE DEVELOPER & CODER</p>
+        <h1>Hello, I'm Dipak Sonawane</h1>
+        <p class="intro-paragraph">I build digital experiences.</p>
+        <p>Computer Science Undergraduating | C Programmer & SQL | Learning C++ & Java | Aspiring AI/ML Developer | Student at K.K. Wagh.</p>
+        <a href="{{ url_for('projects') }}" class="btn">View My Work</a>
+    </div>
+    <div class="hero-image">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Dipak Sonawane">
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I m a <strong>Computer Science</strong> student with a strong interest in DATA STRUCTURE with AI, also Webapp Development and a passion for building creative and user-friendly digital experiences.
+I m also good at C programming, and currently learning Data Structures and Algorithms to strengthen my problem-solving, also learning new technologies to strengthen my technical foundation.
+Other then coding, I’m a skilled video editor and use Canva to design eye catching graphics and photos.
+and, I also did work as in Customer Relationship Management, where I focus on clear communication and delivering positive experiences.
+
+I’m good to go to connect with professionals, learn from the tech community, and explore opportunities to grow as a developer and creator.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">C</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">postgres</div>
+        <div class="skill-card">C++</div>
+        <div class="skill-card">REST APIs</div>
+    </div>
+</section>
+
+<section id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificates-grid">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/certificate1.jpg') }}" alt="Certificate 1">
+            <div class="card-content">
+                <h3>Python for Everybody</h3>
+                <p>Coursera - 2023</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/certificate1.jpg') }}" alt="Certificate 2">
+            <div class="card-content">
+                <h3>Flask Essential Training</h3>
+                <p>LinkedIn Learning - 2024</p>
+            </div>
+        </div>
+         <div class="card">
+            <img src="{{ url_for('static', filename='images/certificate1.jpg') }}" alt="Certificate 3">
+            <div class="card-content">
+                <h3>SQL for Data Science</h3>
+                <p>Udemy - 2023</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <p><strong>Email:</strong> dipaksonwane412@gmail.com</p>
+            <p><strong>Phone:</strong> +91 9226100961</p>
+            <p><strong>LinkedIn:</strong> www.linkedin.com/in/dipak-sonawane-511b5323a</p>
+            <p><strong>GitHub:</strong>https://github.com/DSnext412-jpg</p>
+        </div>
+        <div class="contact-form">
+            <form method="POST" action="{{ url_for('contact') }}">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

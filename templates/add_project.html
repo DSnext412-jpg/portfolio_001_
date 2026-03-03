@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Project{% endblock %}
+
+{% block content %}
+<section id="add-project-form">
+    <div class="container">
+        <h2>Add a New Project</h2>
+        <form method="POST" action="{{ url_for('add_project') }}" enctype="multipart/form-data">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+            
+            <label for="image">Image</label>
+            <input type="file" id="image" name="image" accept="image/*">
+            
+            <button type="submit" class="btn">Add Project</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

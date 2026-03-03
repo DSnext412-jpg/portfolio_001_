@@ -42,7 +42,6 @@
 
    - config.py: This file's sole purpose is to keep your sensitive database credentials separate from your main application logic. This is a critical security practice. Your app.py imports this configuration to
      know how to connect to MySQL.
-   - requirements.txt: Think of this as the project's shopping list. It tells Python which external libraries are needed for the project to run (in this case, Flask and mysql-connector-python). The command pip
      install -r requirements.txt reads this file and installs them.
    - database_setup.sql: This is your database blueprint. It contains the exact SQL commands needed to create your database (dipak_portfolio) and the tables (projects, contacts) with the correct structure.
 
@@ -83,4 +82,5 @@
    4. Templating: The function passes the list of projects into the render_template() function, pointing to projects.html.
    5. HTML Generation: Flask and Jinja2 work together. projects.html extends base.html, and its for loop generates the HTML for each project card using the data from the database.
    6. Backend Sends Response: A complete, final HTML document is sent back to the user's browser.
+
    7. Browser Renders: The browser displays the HTML and automatically requests the style.css file to apply the styling, making the page look exactly as designed.

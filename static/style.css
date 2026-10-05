@@ -1,4 +1,3 @@
-/* --- General --- */
 :root {
     --bg-color: #121212;
     --primary-text-color: #e0e0e0;
@@ -60,7 +59,6 @@ section {
 }
 
 
-/* --- Header & Nav --- */
 header {
     background-color: var(--bg-color);
     padding: 1rem 2rem;
@@ -103,7 +101,6 @@ nav ul li a:hover {
     color: var(--accent-color);
 }
 
-/* --- Hero Section --- */
 #hero {
     display: flex;
     align-items: center;
@@ -143,7 +140,6 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
-/* --- About & Contact Info --- */
 #about p, #contact .contact-info p {
     max-width: 800px;
     margin: 0 auto;
@@ -151,7 +147,6 @@ nav ul li a:hover {
     font-size: 1.1rem;
 }
 
-/* --- Grids (Skills, Certificates, Projects) --- */
 .skills-grid, .certificates-grid, .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -160,7 +155,6 @@ nav ul li a:hover {
     text-align: left;
 }
 
-/* --- Cards (Certificates, Projects) & Skill Cards --- */
 .card, .skill-card {
     background: var(--card-bg-color);
     border: 1px solid var(--border-color);
@@ -200,7 +194,6 @@ nav ul li a:hover {
     color: var(--secondary-text-color);
 }
 
-/* --- Contact Section --- */
 #contact .contact-container {
     display: flex;
     flex-wrap: wrap;
@@ -214,7 +207,6 @@ nav ul li a:hover {
     min-width: 300px;
 }
 
-/* --- Forms --- */
 form {
     display: flex;
     flex-direction: column;
@@ -241,7 +233,6 @@ form label {
     text-align: left;
 }
 
-/* --- Projects Page --- */
 #projects .add-project-link {
     margin-top: 2rem;
 }
@@ -262,12 +253,10 @@ form label {
     background: #c82333;
 }
 
-/* --- Add Project Form Page --- */
 #add-project-form .container {
     max-width: 700px;
 }
 
-/* --- Footer --- */
 footer {
     text-align: center;
     padding: 2rem;
@@ -276,7 +265,6 @@ footer {
     color: var(--secondary-text-color);
 }
 
-/* --- Flash Messages --- */
 .flash-messages {
     width: 100%;
     padding: 0 20px;
@@ -304,7 +292,6 @@ footer {
     border-color: #ebccd1;
 }
 
-/* --- Responsive --- */
 @media (max-width: 768px) {
     h1 { font-size: 2.5rem; }
     #hero { text-align: center; flex-direction: column-reverse; }

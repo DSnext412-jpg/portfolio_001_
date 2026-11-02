@@ -217,20 +217,8 @@ If you like this project
 
 ## 💡 "Code. Learn. Build. Repeat."
 
-<img src="https://github-readme-stats.vercel.app/api?username=DSnext412-jpg&show_icons=true&theme=tokyonight&hide_border=true"/>
-
-<br>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=DSnext412-jpg&theme=tokyonight&hide_border=true"/>
-
-<br>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=DSnext412-jpg&theme=tokyo-night"/>
-
 ---
 
 ### Thanks for visiting my portfolio ❤️
-
-⭐ Don't forget to star this repository if you found it interesting.
 
 </div>
